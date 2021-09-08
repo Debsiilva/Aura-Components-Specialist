@@ -5,7 +5,6 @@
     <aura:attribute name="showNewButton" type='Boolean' default='false' />
 
     <aura:handler name="init" value="{!this}" action="{!c.initBoatSearchForm}" />
-    <aura:registerEvent name="formsubmit" type="c:FormSubmit" />
 
     <lightning:layout horizontalAlign="center">
 
