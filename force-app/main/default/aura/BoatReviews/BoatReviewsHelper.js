@@ -1,7 +1,11 @@
 ({
-    getBoatTypes : function(component) {
+	onInit  : function(component, event, helper) {
+        // Apex method
+        var action = component.get("c.getAll");
         
-        var action = component.get("c.getBoatRecords");
+        action.setParams({
+            "boatId": component.get("v.boat").Id
+        });
         
         action.setCallback(this, function(response) {
             var state = response.getState();
@@ -9,7 +13,7 @@
             if (state === "SUCCESS") {
                 
                 var record = response.getReturnValue();
-                component.set("v.boatRecords", record);
+                component.set("v.boatReviews", record);
                 
             } else if (state === "ERROR") {
                 var errors = response.getError();
@@ -22,5 +26,5 @@
         });
         
         $A.enqueueAction(action);
-    }
+	}
 })

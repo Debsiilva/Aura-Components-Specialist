@@ -1,11 +1,15 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
-        
-    <lightning:card title="Find a Boat" class="slds-m-bottom_xxx-small">
-        <c:BoatSearchForm />
-    </lightning:card>
+  
+<aura:component implements="flexipage:availableForAllPageTypes">
     
-    <lightning:card title="Matching Boats">
-        <c:BoatSearchResults aura:id="boatSearchResultsCmp"/>
-    </lightning:card>
+    <aura:handler name="formsubmit" event="c:FormSubmit" action="{!c.onFormSubmit}"/>
+    
+    <lightning:card title="Find a boat" >
+        <c:BoatSearchForm />
+    </lightning:card>  
+    
+    <lightning:card title="Matching Boats" >
+        <!-- the aura ID is required to fire the method on the child -->
+        <c:BoatSearchResults aura:id='childComponent'/>
+    </lightning:card>  
     
 </aura:component>
