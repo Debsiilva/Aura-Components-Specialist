@@ -1,4 +1,4 @@
-  public with sharing class BoatController {
+public with sharing class BoatController {
     
     @AuraEnabled
     public static List<BoatType__c> getBoatRecords() {

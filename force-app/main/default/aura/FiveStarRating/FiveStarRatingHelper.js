@@ -1,4 +1,3 @@
-
 ({
     afterScriptsLoaded : function(component, event, helper) {
         // for detailed information on how to get DOM https:

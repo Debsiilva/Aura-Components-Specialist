@@ -1,4 +1,3 @@
-  
 ({
     // challenge 3 
     doInit : function(component, event, helper) {

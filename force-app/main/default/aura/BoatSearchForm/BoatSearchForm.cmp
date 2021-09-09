@@ -5,7 +5,7 @@
     <aura:attribute name="boatTypeId" type="String" />
     
     <!-- challenge 4 -->
-    <aura:registerEvent name="formsubmit" type="c:FormSubmit"/>
+    <aura:registerEvent name="formsubmit" type="c:formsubmit"/>
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     

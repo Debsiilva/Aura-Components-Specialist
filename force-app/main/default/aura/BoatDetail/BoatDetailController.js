@@ -1,4 +1,3 @@
-
 ({
     onFullDetails : function(component, event, helper) {
         // got this on :

@@ -1,4 +1,3 @@
-  
 ({
     rerender: function (component) {
         

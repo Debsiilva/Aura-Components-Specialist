@@ -1,4 +1,3 @@
-
 ({
     onSearch : function(component) {
         // Apex method

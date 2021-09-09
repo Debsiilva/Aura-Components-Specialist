@@ -1,8 +1,7 @@
-
 ({
     newBoat : function(component, event, helper) {
         var createRecordEvent = $A.get("e.force:createRecord");
-        
+                
         // Check if record exists for standalone app (https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/events_one.htm)
         createRecordEvent.setParams({
             "entityApiName": "Boat__c",

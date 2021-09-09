@@ -1,4 +1,3 @@
-
 public class BoatReviews {
     
     @AuraEnabled
